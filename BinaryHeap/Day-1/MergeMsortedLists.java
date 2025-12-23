@@ -1,5 +1,5 @@
 //Leetcode Problem Link: https://leetcode.com/problems/merge-k-sorted-lists/description/
-package BinaryHeap;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -10,8 +10,7 @@ package BinaryHeap;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-import java.util.PriorityQueue;
-import java.util.ArrayList;
+
 public class MergeMsortedLists{
     public ListNode mergeKLists(ListNode[] lists) {
        PriorityQueue<ListNode> p=new PriorityQueue<>((a,b)->a.val-b.val);
